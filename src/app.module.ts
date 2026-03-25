@@ -3,6 +3,7 @@ import { APP_FILTER } from '@nestjs/core';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { ApiExceptionFilter } from './common/api-exception.filter';
+// import { ProductModule } from './product.module';
 
 @Module({
   imports: [],
@@ -12,6 +13,7 @@ import { ApiExceptionFilter } from './common/api-exception.filter';
     {
       provide: APP_FILTER,
       useClass: ApiExceptionFilter,
+      // ProductModule: ProductModule,
     },
   ],
 })
