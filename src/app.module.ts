@@ -4,6 +4,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { ApiExceptionFilter } from './common/api-exception.filter';
 // import { ProductModule } from './product.module';
+// import { PurchaseModule } from './purchases.module';
 
 @Module({
   imports: [],
