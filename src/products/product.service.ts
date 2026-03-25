@@ -5,10 +5,10 @@ import * as path from 'path';
 
 @Injectable()
 export class ProductService {
-    findAll(): Product [] {
-        const filePath = path.join(process.cwd(), 'data', 'users.json');
-        const rawData = fs.readFileSync(filePath, 'utf8');
-        const parsedData: unknown = JSON.parse(rawData);
-        return parsedData as Product [];
-      }
+  findAll(): Product[] {
+    const filePath = path.join(process.cwd(), 'data', 'users.json');
+    const rawData = fs.readFileSync(filePath, 'utf8');
+    const parsedData: unknown = JSON.parse(rawData);
+    return parsedData as Product[];
+  }
 }
