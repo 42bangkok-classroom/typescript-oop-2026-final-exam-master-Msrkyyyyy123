@@ -5,4 +5,3 @@ export interface Product {
     stock: number;
     description: string;
   }
-  
